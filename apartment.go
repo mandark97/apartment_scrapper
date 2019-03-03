@@ -4,12 +4,13 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+	"time"
 )
 
 // Apartment is nice
 type Apartment struct {
 	Title              string
-	DateAdded          string
+	DateAdded          time.Time
 	OfferedBy          string
 	Surface            int
 	Partitioning       string
